@@ -46,7 +46,8 @@ SpriteIdentifierPokemon::identify_pokemon(
      * sprite is double the stored sprite size, the scale would be 2.
      * @param is_silhouette If the image contains a black silhouette of the
      * Pokemon then this parameter should be set to true.
-     * @return ID number of the identified Pokemon.
+     * @return match_result struct containing the ID number of the identified
+     * Pokemon and the match value.
      */
     
     // Resize the image as needed based on the scale of the sprite in the image.
@@ -135,7 +136,8 @@ SpriteIdentifierPokemon::identify_pokemon(
      * sprite is double the stored sprite size, the scale would be 2.
      * @param is_silhouette If the image contains a black silhouette of the
      * Pokemon then this parameter should be set to true.
-     * @return ID number of the identified Pokemon.
+     * @return match_result struct containing the ID number of the identified
+     * Pokemon and the match value.
      */
 
     // Convert the QImage to the OpenCV image format (Mat).
@@ -171,7 +173,8 @@ SpriteIdentifierPokemon::identify_pokemon(
      * sprite is double the stored sprite size, the scale would be 2.
      * @param is_silhouette If the image contains a black silhouette of the
      * Pokemon then this parameter should be set to true.
-     * @return ID number of the identified Pokemon.
+     * @return match_result struct containing the ID number of the identified
+     * Pokemon and the match value.
      */
 
     // Take a snapshot from the video feed.
